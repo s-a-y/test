@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>Test</title>
+  <script src="components/platform/platform.js"></script>
+  <link rel="import" href="/components/font-roboto/roboto.html">
+  <link rel="import" href="/components/sampler-scaffold/sampler-scaffold.html">
+
+  <link rel="import" href="/components/core-item/core-item.html">
+
+  <style>
+
+    body {
+      font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;
+      font-size: 16px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    core-scaffold {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    core-toolbar {
+      background-color: #000;
+      color: #FFF;
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+
+  </style>
+</head>
+<body unresolved>
+
+<sampler-scaffold label="" fir touch-action="auto">
+  <paper-icon-button class="menuButton" icon="menu" ></paper-icon-button>
+
+  <core-item label="Page" tag="page" url="/page.html"></core-item>
+  <core-item label="Page2" tag="page2" url="../paper-radio-group/demo.html"></core-item>
+  <core-item label="Page3" tag="page3" url="../paper-toggle-button/demo.html"></core-item>
+
+</sampler-scaffold>
+
+</body>
+</html>

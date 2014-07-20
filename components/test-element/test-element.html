@@ -1,0 +1,20 @@
+<link rel="import" href="../core-selector/core-selector.html">
+<link rel="import" href="../core-item/core-item.html">
+<link rel="import" href="../core-menu/core-menu.html">
+
+<link rel="stylesheet" href="test-element.css" shim-shadowdom>
+
+<polymer-element name="test-element" extends="core-selector">
+  <template>
+    <template repeat="{{line in lines}}">
+      <core-item label="{{line.name}}"></core-item>
+    </template>
+  </template>
+  <script>
+    Polymer('test-element', {
+      ready: function() {
+        this.lines = []
+      }
+    });
+  </script>
+</polymer-element>
